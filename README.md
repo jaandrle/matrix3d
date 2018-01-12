@@ -1,11 +1,11 @@
 # Třída pro manipulaci s matrix3d - zatím jen prvotní nástřel
 ## Průřez
 ### Parametry konstruktoru
-
-    elements //elementy buď klasické JavaScriptové, nebo jQuery
-    selector //string pro výběr
-        ...elemen je potřeba vybrat buť pomocí 'elements', nebo 'selector' (preferovaná verze)
-    directly //bez efektu
+    Předává se mu list hodnot:
+        - elements //elementy buď klasické JavaScriptové, nebo jQuery
+        - selector //string pro výběr
+          ...elemen je potřeba vybrat buť pomocí 'elements', nebo 'selector' (preferovaná verze)
+        - directly //bez efektu
 ### Metody třídy
 
     _this.write= function(matrix){ ... //zápis buď zadané matice/transformace 'matrix', nebo interní matice
