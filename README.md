@@ -6,7 +6,7 @@
         - selector //string pro výběr
           ...elemen je potřeba vybrat buť pomocí 'elements', nebo 'selector' (preferovaná verze)
         - directly //bez efektu
-### Metody třídy
+### Metody
 
     _this.write= function(matrix){ ... //zápis buď zadané matice/transformace 'matrix', nebo interní matice
     _this.returnStyle= function(matrix){ ... //vypíše kompletní zápis stylu aktuální matice nebo 'matrix'
@@ -14,7 +14,7 @@
     _this.clear= function(){ ... //resetuje trasformace
     _this.t= { ...//schraňuje všechny transformační funkce
     _this.chain= function(){... //umožní řetězení metod
-### Statické metody třídy
+### Statické metody (přístupné přes '$M.')
 
     settings={//nastavování jednotek
         angle ["radians" : "degrees"] - default stupně
