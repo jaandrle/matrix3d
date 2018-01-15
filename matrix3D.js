@@ -108,8 +108,17 @@
         },
         skew(x=0,y=0,z=0){
             let out= this.diagonal();
-            if(x) out[0][1]= out[0][2]= -Math.tan(x*convert.to_rad); if(y) out[1][0]= out[1][2]= Math.tan(y*convert.to_rad); if(z) out[2][1]= out[2][2]= Math.tan(z*convert.to_rad);
+            if(x) out[1][0]= out[2][0]= Math.tan(x*convert.to_rad); if(y) out[0][1]= out[2][1]= Math.tan(y*convert.to_rad); if(z) out[0][2]= out[1][2]= Math.tan(z*convert.to_rad);
             return out;
+        },
+        skewX(s){//alias pro 'this.skew(s,0,0)'
+            return this.skew(s,0,0);
+        },
+        skewY(s){//alias pro 'this.skew(0,s,0)'
+            return this.skew(0,s,0);
+        },
+        skewZ(s){//alias pro 'this.skew(0,0,s)'
+            return this.skew(0,0,s);
         },
         scroll(x=0,y=0,z=0){
             let out= this.diagonal();
